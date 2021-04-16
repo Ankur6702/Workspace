@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 2.5vw;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    gap: 0vw;
+}
+
+.box{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 12vw;
+    margin: 1vw;
+    text-align: center;
+    position: relative;
+}
+
+.box a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.7vw;
+    display: block;
+    height: 12vw;
+}
+
+.image{
+    position: relative;
+    height: 7vw;
+    width: 11vw;
+    margin-left: 3.5vw;
+    margin-top: 1vw;
+}
+
+.box:hover{
+    text-decoration: none;
+    transform: rotate(-3deg);
+    box-shadow: 4px 4px 5px 2px grey;
+    transition: 0.3s;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    * {
+        font-size: 6vw;
+    }
+    
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+    }
+
+    .box a {
+        font-size: 3.25vw;
+    }
+
+    .box {
+        height: 18vw;
+    }
+
+    .image{
+        margin-left: 9.5vw;
+        margin-top: 1vw;
+        max-width: 11vw;
+    }
+}
+@media only screen and (max-width: 600px) {
+    * {
+        font-size: 6vw;
+    }
+    
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        /* align-items: center; */
+    }
+
+    .box a{
+        height: 10vw;
+        font-size: 4vw;
+    }
+
+    .image{
+        margin-left: 17.5vw;
+        margin-top: 3vw;
+        max-width: 11vw;
+    }
+
+    .box{
+        cursor: pointer;
+        border: 2px solid black;
+        border-radius: 10px;
+        height: 23vw;
+        margin: 1vw;
+        text-align: center;
+        position: relative;
+    }
+}
